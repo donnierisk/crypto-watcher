@@ -1,9 +1,10 @@
-.App {
+html,body,#root {
+  height:100%;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.App {
+  background:#222;
+  height:100%;
 }
 
 .App-header {
@@ -12,11 +13,6 @@
   padding: 20px;
   color: white;
   text-align:center;
-}
-
-.col-half {
-  width:calc (50% - 40px);
-  padding:20px;
 }
 
 .react-autosuggest__container {
@@ -38,6 +34,7 @@
   color: #357F2A;
   margin:0;
   border-top:10px solid #357F2A;
+  box-shadow: 0px 2px 3px #222;
 }
 
 .react-autosuggest__suggestions-list li {
@@ -49,9 +46,29 @@
   border-bottom:0;
 }
 
+#adder {
+  padding:20px;
+  background:white;
+  text-align:center;
+}
+
 #addCrypto {
   background: #357F2A;
   border: 0;
   padding: 11px 10px;
   color: #BBFFB0;
+}
+
+#coins-container {
+  padding:20px;
+  display:flex;
+  flex-wrap:wrap;
+}
+
+.single-coin {
+  width:23%;
+  margin:10px 1% 20px;
+  padding:10px;
+  box-sizing: border-box;
+  background:#BBFFB0;
 }

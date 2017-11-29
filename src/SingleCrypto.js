@@ -26,7 +26,7 @@ class SingleCrypto extends Component {
 
   render() {
     return (
-      <div>
+      <div className='single-coin'>
         <p>Name: {this.props.info.name}</p>
         <p>Price at time of purchase (USD): $
           <input type="number" value={this.state.value} onChange={this.handleChange} />

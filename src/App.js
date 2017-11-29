@@ -30,7 +30,7 @@ class App extends Component {
   }
 
   requestData () {
-    axios.get('https://api.coinmarketcap.com/v1/ticker/?limit=10')
+    axios.get('https://api.coinmarketcap.com/v1/ticker/?limit=100')
     .then((response) =>{
       //console.log(response.data[0]);
       let cryptoArray = response.data.map((val,index)=>{
@@ -139,7 +139,7 @@ class App extends Component {
         <header className="App-header">
           <h1 className="App-title">Welcome to your Personal Crypto Watcher</h1>
         </header>
-        <div className='col-half'>
+        <div id='adder'>
             
             <Autosuggest
               suggestions={suggestions}
@@ -151,7 +151,7 @@ class App extends Component {
             />
             <button id='addCrypto' onClick={this.addCrypto}>+ Add CryptoCurrency</button>
           </div>
-        <div className='col-half'>
+        <div id='coins-container'>
           {this.state.cryptoOwned.map((value,index)=> this.singleCrypto(value,index))}
         </div>
       </div>
