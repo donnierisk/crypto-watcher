@@ -1,0 +1,57 @@
+.App {
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+  text-align:center;
+}
+
+.col-half {
+  width:calc (50% - 40px);
+  padding:20px;
+}
+
+.react-autosuggest__container {
+  position:relative;
+  display:inline-block;
+}
+
+.react-autosuggest__input {
+  width: 198px;
+  padding: 10px 15px;
+  border: 1px solid #357F2A;
+}
+.react-autosuggest__suggestions-list {
+  list-style: none;
+  width: 200px;
+  position: absolute;
+  background: #BBFFB0;
+  padding: 10px 15px;
+  color: #357F2A;
+  margin:0;
+  border-top:10px solid #357F2A;
+}
+
+.react-autosuggest__suggestions-list li {
+  padding: 10px 0;
+  border-bottom: 1px solid #357F2A;
+}
+
+.react-autosuggest__suggestions-list li:last-child {
+  border-bottom:0;
+}
+
+#addCrypto {
+  background: #357F2A;
+  border: 0;
+  padding: 11px 10px;
+  color: #BBFFB0;
+}
